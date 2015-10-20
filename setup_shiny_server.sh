@@ -13,3 +13,4 @@ echo "cat(system.file(package = 'dpcR'), '/dpcReport\n', sep = '')" | R --no-sav
 tail -2 tmp_file | head -1 | cp shiny-server
 cp -R `tail -2 tmp_file | head -1` /srv/shiny-server/shiny-server
 rm tmp_file
+#address http://123.456.1.2:3838/
