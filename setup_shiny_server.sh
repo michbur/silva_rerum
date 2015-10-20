@@ -1,5 +1,4 @@
-#add deb https://cran.rstudio.com/bin/linux/ubuntu trusty/ to /etc/apt/sources.list
-
+sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
 sudo apt-get update
 sudo apt-get install r-base
 sudo apt-get install r-base-dev
