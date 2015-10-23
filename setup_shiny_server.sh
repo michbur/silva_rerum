@@ -1,3 +1,4 @@
+#cat /etc/*-release
 sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
 sudo apt-get update
 sudo apt-get install r-base
@@ -14,8 +15,8 @@ sudo su shiny
 # sudo su - -c "R -e \"install.packages('shiny')\""
 # sudo su - -c "R -e \"install.packages('devtools')\""
 # sudo su - -c "R -e \"install.packages('rmarkdown')\""
-# sudo su - -c "R -e \"devtools::install_github('michbur/dpcR')\""
-echo "cat(system.file(package = 'dpcR'), '/dpcReport\n', sep = '')" | R --no-save > tmp_file
-sudo cp -R `tail -2 tmp_file | head -1` /srv/shiny-server/shiny-server
+# sudo su - -c "R -e \"devtools::install_github('michbur/signalHsmm')\""
+echo "cat(system.file(package = 'signalHsmm'), '/signal_gui\n', sep = '')" | R --no-save > tmp_file
+sudo cp -R `tail -2 tmp_file | head -1` /srv/shiny-server/signalHsmm
 rm tmp_file
-#address http://123.456.1.2:3838/
+#address http://smorfland.uni.wroc.pl:3838/signalHsmm
