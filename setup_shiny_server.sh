@@ -8,6 +8,7 @@ sudo apt-get install libxml2-dev
 sudo apt-get install libx11-dev 
 sudo apt-get install mesa-common-dev
 sudo apt-get install libglu1-mesa-dev
+sudo apt-get install libssl-dev
 wget http://download2.rstudio.org/rstudio-server-0.97.336-amd64.deb
 wget https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.4.0.756-amd64.deb
 sudo gdebi shiny-server-1.4.0.756-amd64.deb
