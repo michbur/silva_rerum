@@ -1,0 +1,1 @@
+bash-3.2$ docker run -ti --rm  rocker/r-devel /bin/bash
