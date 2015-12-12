@@ -5,7 +5,7 @@ readLines("cran2roxygen_example.txt") %>%
   gsub(",", "", .) %>%
   gsub("(", " ", ., fixed = TRUE) %>%
   gsub(")", " ", ., fixed = TRUE) %>%
-  gsub(")", " ", ., fixed = TRUE) %>%
+  gsub('"', '', ., fixed = TRUE) %>%
   gsub("[ ]{2,}", "", .) %>%
   gsub("importFrom", "\n#' @importFrom", .) %>%
   cat(., file = "result.txt")
