@@ -1,1 +1,6 @@
-bash-3.2$ docker run -ti --rm  rocker/r-devel /bin/bash
+docker run -ti --rm  rocker/r-devel /bin/bash
+#try dpkg --print-foreign-architectures
+#if not output:
+#sudo dpkg --add-architecture i386
+#sudo apt-get install -f
+#sudo apt-get update ; sudo apt-get dist-upgrade
