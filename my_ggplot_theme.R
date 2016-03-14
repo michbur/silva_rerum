@@ -13,8 +13,9 @@ my_theme <- theme(
   legend.background = element_rect(fill = "NA"),
   legend.key = element_rect(fill = "NA", color = "NA", size = 0.5),
   legend.position = "bottom",
-  legend.key.size = unit(0.1, "inches"),
-  legend.margin = unit(-0.25, "lines"),
+  #uncomment for publications
+  #legend.key.size = unit(0.1, "inches"),
+  #legend.margin = unit(-0.25, "lines"),
   legend.text = element_text(size=13 + size_mod), 
   legend.title = element_text(size=14 + size_mod),
   
@@ -25,7 +26,8 @@ my_theme <- theme(
   
   plot.background=element_rect(fill = "transparent",
                                color = "transparent"),
-  plot.margin = unit(rep(0.02, 4), "inches"),
+  #uncomment for publications
+  #plot.margin = unit(rep(0.02, 4), "inches"),
   plot.title = element_text(size=20 + size_mod),
   
   strip.background = element_rect(fill = "NA", color = "NA"),
