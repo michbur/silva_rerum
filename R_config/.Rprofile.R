@@ -30,6 +30,8 @@ my_print <- function (x, ..., digits = NULL, quote = FALSE, right = TRUE,
 }
 
 unlockBinding("print.data.frame", as.environment("package:base"))
-assignInNamespace("print.data.frame", my_print, ns="base", envir=as.environment("package:base"))
+#assignInNamespace("print.data.frame", my_print, ns="base", envir=as.environment("package:base"))
 assign("print.data.frame", my_print, as.environment("package:base"))
 lockBinding("print.data.frame", as.environment("package:base"))
+
+#sudo cp Dokumenty/gits/silva_rerum/R_config/.Rprofile.R /etc/R/.Rprofile.R
