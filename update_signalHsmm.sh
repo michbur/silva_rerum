@@ -11,3 +11,4 @@ sudo start shiny-server
 
 # change server file
 sudo wget -O /srv/shiny-server/signalHsmm/server.R "http://raw.githubusercontent.com/michbur/signalHsmm/master/inst/signal_gui/server.R"
+sudo cp -R AmyloGram/ /srv/shiny-server/AmyloGram
