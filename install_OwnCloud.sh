@@ -12,3 +12,5 @@ tar -xjf owncloud-x.y.z.tar.bz2
 cp -r owncloud /var/www/
 
 # see http://localhost/owncloud
+
+# ports: 80 and 443 
