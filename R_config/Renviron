@@ -15,7 +15,7 @@ R_RD4PDF=${R_RD4PDF-'times,inconsolata,hyper'}
 ## used for options("texi2dvi")
 R_TEXI2DVICMD=${R_TEXI2DVICMD-${TEXI2DVI-'/usr/bin/texi2dvi'}}
 ## used by INSTALL, untar() and installing grDevices
-R_GZIPCMD=${R_GZIPCMD-'/bin/gzip'}
+R_GZIPCMD=${R_GZIPCMD-'/bin/gzip -n'}
 ## Default zip/unzip commands
 R_UNZIPCMD=${R_UNZIPCMD-'/usr/bin/unzip'}
 R_ZIPCMD=${R_ZIPCMD-'/usr/bin/zip'}
@@ -46,8 +46,8 @@ R_PROFILE_USER=${R_PROFILE_USER-'/etc/R/.Rprofile'}
 ## System and compiler types.
 R_SYSTEM_ABI='linux,gcc,gxx,gfortran,?'
 
-R_LIBS_USER=${R_LIBS_USER-'~/R/x86_64-pc-linux-gnu-library/3.2'}
-#R_LIBS_USER=${R_LIBS_USER-'~/Library/R/3.2/library'}
+R_LIBS_USER=${R_LIBS_USER-'~/R/x86_64-pc-linux-gnu-library/3.4'}
+#R_LIBS_USER=${R_LIBS_USER-'~/Library/R/3.4/library'}
 
 # edd Apr 2003  Allow local install in /usr/local, also add a directory for
 #               Debian packaged CRAN packages, and finally the default dir 
