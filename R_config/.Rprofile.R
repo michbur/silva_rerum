@@ -21,7 +21,7 @@ my_print <- function (x, ..., digits = NULL, quote = FALSE, right = TRUE,
     
     if(head) {
       print(head(m), ..., quote = quote, right = right)
-      cat("----\n", nrow(m) - 5, "rows ommited\n")
+      cat("----\n", nrow(m) - 6, "rows ommited\n")
     } else {
       print(m, ..., quote = quote, right = right)
     }
