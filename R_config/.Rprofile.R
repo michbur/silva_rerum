@@ -12,7 +12,7 @@ my_print <- function (x, ..., digits = NULL, quote = FALSE, right = TRUE,
     cat(gettext("<0 rows> (or 0-length row.names)\n"))
   }
   else {
-    m <- as.matrix(format.data.frame(x, digits = digits, 
+    m <- as.matrix(format.data.frame(x[1L:6, ], digits = digits, 
                                      na.encode = FALSE))
     if (!isTRUE(row.names)) 
       dimnames(m)[[1L]] <- if (identical(row.names, FALSE)) 
