@@ -1,23 +1,22 @@
 #cat /etc/*-release
-sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
+sudo sh -c 'echo "deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/" >> /etc/apt/sources.list'
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 sudo apt-get update
 sudo apt-get install r-base
-sudo apt-get install r-base-dev
 sudo apt-get install gdebi-core
 sudo apt-get install libxml2-dev
 sudo apt-get install libx11-dev 
 sudo apt-get install mesa-common-dev
 sudo apt-get install libglu1-mesa-dev
 sudo apt-get install libssl-dev
-# wget http://download2.rstudio.org/rstudio-server-0.97.336-amd64.deb
-wget https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.5.6.875-amd64.deb
-sudo gdebi shiny-server-1.4.0.756-amd64.deb
+# wget http://download2.rstudio.org/rstudio-server-0.97.336-amd64.debs
+wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.13.944-amd64.deb
+sudo gdebi shiny-server-1.5.13.944-amd64.deb
 sudo su shiny
 # sudo su - -c "R -e \"install.packages('shiny')\""
 # sudo su - -c "R -e \"install.packages('devtools')\""
 # sudo su - -c "R -e \"install.packages('rmarkdown')\""
-# sudo su - -c "R -e \"devtools::install_github('michbur/signalHsmm')\""
-echo "cat(system.file(package = 'signalHsmm'), '/signal_gui\n', sep = '')" | R --no-save > tmp_file
-sudo cp -R `tail -2 tmp_file | head -1` /srv/shiny-server/signalHsmm
+# sudo su - -c "R -e \"install.packages('AmyloGram')\""
+echo "cat(system.file(package = 'AmyloGram'), '/AmyloGram\n', sep = '')" | R --no-save > tmp_file
+sudo cp -R `tail -2 tmp_file | head -1` /srv/shiny-server/AmyloGram
 rm tmp_file
-#address http://smorfland.uni.wroc.pl:3838/signalHsmm
