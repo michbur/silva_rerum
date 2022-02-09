@@ -7,11 +7,10 @@ sudo apt-get update
 sudo apt-get install r-base
 sudo apt-get install gdebi-core
 sudo apt-get install gdebi-core libxml2-dev sudo apt -y install libcurl4-openssl-dev libx11-dev mesa-common-dev libglu1-mesa-dev libssl-dev libgmp3-dev
-wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.13.944-amd64.deb
 sudo su - \
 -c "R -e \"install.packages('shiny', repos='https://cran.rstudio.com/')\""
-wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.15.953-amd64.deb
-sudo gdebi shiny-server-1.5.15.953-amd64.deb
+wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.17.973-amd64.deb
+sudo gdebi shiny-server-1.5.17.973-amd64.deb
 sudo su shiny
 # sudo su - -c "R -e \"install.packages('shiny')\""
 # sudo su - -c "R -e \"install.packages('devtools')\""
